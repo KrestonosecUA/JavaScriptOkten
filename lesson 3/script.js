@@ -59,14 +59,11 @@ while (i <= 10) {
 document.write(`<h1 class="hw_title">Homework 5</h1>`)
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-
-for (let i = 0; i < listOfItems.length; i++) {
-    document.write(`
-    <ul class="list_hw5">
-        <li>${listOfItems[i]}</li>
-    </ul>`)
-}
-
+document.write(`<ul class="list_hw5">`)
+    for (let i = 0; i < listOfItems.length; i++) {
+        document.write(`<li>${listOfItems[i]}</li>`)
+    }
+document.write(`</ul>`)
 // -----------------------------------------------
 //
 // Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -177,7 +174,7 @@ let users = [
 
 document.write(`<h1>користувачі зі статусом true: </h1>`)
 for (let i = 0; i < users.length; i++) {
-    if (users[i].status === true) {
+    if (users[i].status) {
         document.write(`
          <p class="user_info">${users[i].name} ${users[i].age}</p>
     `)
@@ -187,7 +184,7 @@ for (let i = 0; i < users.length; i++) {
 
 document.write(`<h1>користувачі зі статусом false: </h1>`)
 for (let i = 0; i < users.length; i++) {
-    if (users[i].status === false) {
+    if (!users[i].status) {
         document.write(`
          <p class="user_info">${users[i].name} ${users[i].age}</p>
     `)
