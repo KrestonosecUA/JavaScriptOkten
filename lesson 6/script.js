@@ -226,10 +226,10 @@ console.log(clubsFilter);
 
 let reduce = cards.reduce((suits, card) => {
     if (card.cardSuit === 'spade') {
-        suits['spades'].push(card);
+        suits.spades.push(card);
     }
     else if (card.cardSuit === 'diamond') {
-        suits['diamonds'].push(card);
+        suits.diamonds.push(card);
     }
     else if (card.cardSuit === 'heart') {
         suits['hearts'].push(card);
