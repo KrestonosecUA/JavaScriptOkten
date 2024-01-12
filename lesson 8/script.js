@@ -18,8 +18,9 @@ div.style.textAlign = 'center';
 
 document.body.appendChild(div);
 
-console.log(document)
+let divClone = div.cloneNode(true);
 
+document.body.appendChild(divClone);
 
 // - Є масив:
 // ['Main','Products','About us','Contacts']
