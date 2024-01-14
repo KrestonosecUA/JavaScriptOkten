@@ -1,0 +1,17 @@
+.item {
+    margin-top: 15px;
+    border: 2px solid blue;
+    display: flex;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #808085;
+}
+
+.title, .type {
+    border: 2px solid #b0b0b2;
+    background-color: #61a9ee;
+    font-size: 24px;
+    color: #03057c;
+}
